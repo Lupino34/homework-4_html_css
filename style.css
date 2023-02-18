@@ -4,6 +4,7 @@
 }
 a {
   text-decoration: none;
+  text-align: center;
 }
 
 body {
@@ -11,12 +12,14 @@ body {
   font-family: 'Gilroy';
   padding-left: calc(50% - 615px);
   padding-right: calc(50% - 615px);
+  /* margin-left: 375px;
+  margin-right: 375px; */
 }
-top {
-  margin-left: 375px;
-  margin-right: 375px;
+/* top {
+  /* margin-left: 375px;
+  margin-right: 375px; */
   
-}
+/* } */ 
 
 .homebutton {
   color: #f25822;
@@ -28,13 +31,14 @@ top {
 
 .elsebutton {
   color: #000000;
+ 
 }
 
 .header {
   margin-top: 40px;
   margin-bottom: 96px;
   display: flex;
-  gap:400px;
+  gap:500px;
   justify-content: space-between;
 }
 .menu_nav {
@@ -53,6 +57,7 @@ top {
   font-family: "Gilroy-SemiBold";
   font-size: 14px;
   line-height: 16px;
+  /* text-align: center; */
 }
 
 .main {
@@ -106,9 +111,10 @@ top {
 }
 
 .whitebutton {
+  background: #F25822;
  
   font-family: "Gilroy-Bold";
-  font-size: 15px;
+  /* font-size: 15px;
   line-height: 18px;
   color: #AAAAAA;
   background: #ffffff;
@@ -118,8 +124,17 @@ top {
   padding: 15px 35px;
   font-size: 15px;
   line-height: 18px;
+  font-weight: 700; */
+  padding: 15px, 35px;
+  box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+  border-radius: 50px;
+  text-align: center;
+  padding: 15px 35px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  border: 0;
   font-weight: 700;
- 
 }
 
 .logo {
@@ -130,7 +145,7 @@ top {
   gap: 48px;
 }
 /* @import url("fonts/stylesheet.css"); */
-* {
+/* * {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -180,7 +195,7 @@ top {
     margin-top: 25px;
 }
 .shadow {
-    box-shadow: 15px 25px 56px 6px rgb(168, 172, 171) ;
+    box-shadow: 15px 25px 56px 6px rgb(177, 180, 177) ;
 }
 .icon {
     border-radius: 15px;
@@ -200,8 +215,185 @@ top {
 .yellow {
     background: rgba(255, 205, 29, 0.24);
 }
-/* .advantages {
+.advantages {
+    margin-top: 54px;
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 } */
 
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.advantages_block {
+  background: #fafafa;
+  margin-top: 54px;
+  margin-bottom: 100px;
+}
+.calls_item h3,
+.calls_item a,
+.subheader_advantages h1,
+.advantages_item h3,
+.advantages_item button {
+  font-family: "Gilroy-Bold";
+}
+.calls_item p,
+.subheader_advantages p,
+.advantages_item p {
+  font-family: "Gilroy-Regular";
+}
+.center {
+  padding-left: calc(50% - 630px);
+  padding-right: calc(50% - 630px);
+}
+.calls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+}
+.calls_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 40px 30px 25px 30px;
+}
+.calls_item h3 {
+  margin-top: 25px;
+  font-size: 24px;
+  line-height: 28px;
+}
+.calls_item p {
+  margin-top: 17px;
+  font-size: 15px;
+  line-height: 150%;
+  color: #666666;
+}
+.calls_item a {
+  font-size: 11px;
+  line-height: 150%;
+  color: #000000;
+  margin-top: 25px;
+}
+.shadow {
+  box-shadow: 15px 25px 56px 6px rgb(168, 172, 171);
+}
+.icon {
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 25px;
+}
+.orange {
+  background: rgba(242, 88, 34, 0.25);
+}
+.green {
+  background: rgba(20, 146, 17, 0.28);
+}
+.yellow {
+  background: rgba(255, 205, 29, 0.24);
+}
+
+.subheader_advantages {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  margin-top: 92px;
+}
+.subheader_advantages h1 {
+  font-size: 45px;
+  line-height: 53px;
+}
+.subheader_advantages p {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #666666;
+}
+.advantages {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+.advantages_item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.advantages_item h3 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 21px;
+}
+.advantages_item p {
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
+  color: #aaaaaa;
+  margin-top: 22px;
+}
+/* .advantages_item button {
+  margin-top: 39px;
+  margin-bottom: 50px;
+  background: #f25822;
+  box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.25);
+  border-radius: 50px;
+  font-size: 13px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  padding: 15px 40px;
+  border: 0;
+  transition-duration: 1s;  */
+ /* } */                
+ /*                                                               Анимация кнопки */
+ .advantages_item button {
+  background: #f25822;
+  margin-top: 39px;
+  margin-bottom: 50px;
+  transition-duration: 0,4s;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 150% ;
+  padding: 15px 40px ;
+  text-transform: uppercase ;
+  letter-spacing: 2px;
+  font-size: 13px;
+  border-radius: 50px;
+  top: 0;
+  position: relative;
+  border: 0;
+  text-align: center;
+ }
+ .Orange_butt,
+ .orangebutton,
+ .whitebutton {
+  color:rgb(0, 0, 0);
+  background-color:#f25822;
+  box-shadow: 0 5px 0px rgb(2, 37, 33);
+  transition-duration: 0.5s;
+ }
+ .Orange_butt:hover,
+ .orangebutton:hover,
+ .whitebutton:hover
+  {
+  top: 2px;
+  box-shadow: 0 3px 0px rgb(238, 10, 10);
+  background-color: aqua;
+ }
